@@ -2,8 +2,8 @@
 import inquirer from "inquirer";
 
 const answer = await inquirer.prompt([
-    {message: "Type your first number",type: "number", name: "firstNumber"},
-{message: "Type your second number", type: "number", name: "secondNumber"},
+    {message: "Type your first number here",type: "number", name: "firstNumber"},
+{message: "Type your second number here", type: "number", name: "secondNumber"},
 {message: "Select one of the Operators", type: "list", name: "operator", choices: ["Addition","Subtraction","Multiplication","Division","Exponentiation","Modulus"],
 },
 ]);
@@ -34,3 +34,4 @@ else if(answer.operator === "Modulus"){
 
 else {console.log("Please Perform Valid Action")}
 
+console.log("Good Day!")
